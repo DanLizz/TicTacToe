@@ -1,4 +1,6 @@
 # TicTacToe
 Mobile app for traditional Tic-Tac-Toe
 
-Credits: https://codinginflow.com/
+Implemented Launching Page and ImageButtons with Material UI
+
+Basic Idea Credits: https://codinginflow.com/
