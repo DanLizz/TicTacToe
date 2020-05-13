@@ -23,7 +23,8 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="10dp"
                 android:text="Player 1:0"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:freezesText="true"/>
 
             <TextView
                 android:id="@+id/player2"
@@ -34,7 +35,8 @@
                 android:layout_centerVertical="true"
                 android:layout_marginTop="1dp"
                 android:text="Player 2:0"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:freezesText="true"/>
         </RelativeLayout>
         <Button
             android:id="@+id/reset_button"
@@ -51,19 +53,28 @@
             android:text="Reset" />
 
     </RelativeLayout>
+
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
 
         <Button
             android:id="@+id/button_00"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_round"
+            android:freezesText="true"
             android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textSize="60sp" />
 
         <Button
@@ -73,7 +84,9 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_round"
+            android:freezesText="true"
             android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textSize="60sp" />
 
         <Button
@@ -81,83 +94,124 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_round"
+            android:freezesText="true"
             android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textSize="60sp" />
-        </LinearLayout>
+    </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
 
-            <Button
-                android:id="@+id/button_10"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_round"
-                android:shadowColor="#000000"
-                android:textSize="60sp" />
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:freezesText="true"
+            android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="60sp" />
 
-            <Button
-                android:id="@+id/button_11"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_round"
-                android:shadowColor="#000000"
-                android:textSize="60sp" />
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:freezesText="true"
+            android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="60sp" />
 
-            <Button
-                android:id="@+id/button_12"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_round"
-                android:shadowColor="#000000"
-                android:textSize="60sp" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:freezesText="true"
+            android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="60sp" />
+    </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1">
 
-            <Button
-                android:id="@+id/button_20"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_round"
-                android:shadowColor="#000000"
-                android:textSize="60sp" />
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:freezesText="true"
+            android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="60sp" />
 
-            <Button
-                android:id="@+id/button_21"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_round"
-                android:shadowColor="#000000"
-                android:textSize="60sp" />
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:freezesText="true"
+            android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="60sp" />
 
-            <Button
-                android:id="@+id/button_22"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_round"
-                android:shadowColor="#000000"
-                android:textSize="60sp" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:freezesText="true"
+            android:shadowColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="60sp" />
+    </LinearLayout>
 
 
 </LinearLayout>
