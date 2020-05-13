@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,40 +18,49 @@
 
             <TextView
                 android:id="@+id/player1"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:freezesText="true"
+                android:gravity="center"
                 android:text="Player 1:0"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+                android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
-                android:freezesText="true"/>
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
 
             <TextView
                 android:id="@+id/player2"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/player1"
+                android:layout_alignRight="@id/player1"
                 android:layout_centerInParent="true"
-                android:layout_centerVertical="true"
                 android:layout_marginTop="1dp"
+                android:background="@color/colorPrimary"
+                android:freezesText="true"
+                android:gravity="center"
                 android:text="Player 2:0"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+                android:textColor="@color/colorAccent"
                 android:textSize="30sp"
-                android:freezesText="true"/>
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
         </RelativeLayout>
-        <Button
+
+        <ImageButton
             android:id="@+id/reset_button"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="false"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="86dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginRight="14dp"
-            android:layout_toRightOf="@id/player1"
-            android:background="@drawable/button_round"
-            android:text="Reset" />
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/reset" />
 
     </RelativeLayout>
 
@@ -75,6 +85,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
 
         <Button
@@ -87,6 +98,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
 
         <Button
@@ -102,6 +114,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
     </LinearLayout>
 
@@ -126,6 +139,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
 
         <Button
@@ -138,6 +152,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
 
         <Button
@@ -153,6 +168,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
     </LinearLayout>
 
@@ -178,6 +194,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
 
         <Button
@@ -194,6 +211,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
 
         <Button
@@ -210,6 +228,7 @@
             android:freezesText="true"
             android:shadowColor="#000000"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
     </LinearLayout>
 
